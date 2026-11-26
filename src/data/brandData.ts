@@ -1,18 +1,20 @@
+const BASE = import.meta.env.BASE_URL;
+
 export const IMAGES = {
-  heroEditorial: '/src/assets/images/hero_fashion_editorial_1795696846394.jpg',
-  atelierStillLife: '/src/assets/images/overview_atelier_editorial_1795696851399.jpg',
-  logoSketches: '/assets/aistudio/Design_sem_nome__5__6341d9f8.png',
-  monogramMedallion: '/src/assets/images/favorita_monogram_medallion_1795696907662.jpg',
-  clothingTags: '/assets/aistudio/Etiquetas_de_moda_Favorita_elegantes_82a1abb6.png',
-  shoppingBag: '/src/assets/images/favorita_shopping_bag_1795696912325.jpg',
-  orderBoxCard: '/src/assets/images/favorita_order_box_card_1795696911977.jpg',
-  tissueSeal: '/src/assets/images/favorita_tissue_seal_detail_1795696912541.jpg',
-  productVestido: '/src/assets/images/product_vestido_seda_1795696854348.jpg',
-  productBlazer: '/src/assets/images/product_blazer_alfaiataria_1795696855997.jpg',
-  productConjunto: '/src/assets/images/product_conjunto_linho_1795696858422.jpg',
-  productTrico: '/src/assets/images/product_trico_espresso_1795696857244.jpg',
-  finalCampaign: '/src/assets/images/final_showcase_campaign_1795696859732.jpg',
-  officialLogoImage: '/assets/aistudio/FAVORITA_LG__1___1__cd02f2b3.png',
+  heroEditorial: `${BASE}src/assets/images/hero_fashion_editorial_1795696846394.jpg`,
+  atelierStillLife: `${BASE}src/assets/images/overview_atelier_editorial_1795696851399.jpg`,
+  logoSketches: `${BASE}assets/aistudio/Design_sem_nome__5__6341d9f8.png`,
+  monogramMedallion: `${BASE}src/assets/images/favorita_monogram_medallion_1795696907662.jpg`,
+  clothingTags: `${BASE}assets/aistudio/Etiquetas_de_moda_Favorita_elegantes_82a1abb6.png`,
+  shoppingBag: `${BASE}src/assets/images/favorita_shopping_bag_1795696912325.jpg`,
+  orderBoxCard: `${BASE}src/assets/images/favorita_order_box_card_1795696911977.jpg`,
+  tissueSeal: `${BASE}src/assets/images/favorita_tissue_seal_detail_1795696912541.jpg`,
+  productVestido: `${BASE}src/assets/images/product_vestido_seda_1795696854348.jpg`,
+  productBlazer: `${BASE}src/assets/images/product_blazer_alfaiataria_1795696855997.jpg`,
+  productConjunto: `${BASE}src/assets/images/product_conjunto_linho_1795696858422.jpg`,
+  productTrico: `${BASE}src/assets/images/product_trico_espresso_1795696857244.jpg`,
+  finalCampaign: `${BASE}src/assets/images/final_showcase_campaign_1795696859732.jpg`,
+  officialLogoImage: `${BASE}assets/aistudio/FAVORITA_LG__1___1__cd02f2b3.png`,
 } as const;
 
 export interface ColorSwatch {
@@ -91,7 +93,7 @@ export const BRAND_APPLICATIONS: BrandApplicationItem[] = [
   {
     id: 'papel-seda-lacre',
     number: '05 & 08',
-    title: 'Papel de Seda e Lacre Monograma F',
+    title: 'Papel de Seda e Lacre Monograma',
     category: 'Selagem',
     material: 'Seda marfim 35g · lacre metálico champagne escovado',
     image: IMAGES.tissueSeal,
