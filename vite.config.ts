@@ -6,6 +6,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    // The repository is hosted at https://<user>.github.io/FAVORITA/
+    base: '/FAVORITA/',
     plugins: [
       react(),
       tailwindcss(),
